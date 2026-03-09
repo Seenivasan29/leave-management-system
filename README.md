@@ -22,25 +22,21 @@ Demo Login Credentials:
 
 Employer (Admin)
 
-Email
+Email : admin@test.com
 
-admin@test.com
-
-Password
-
-Admin123
+Password : Admin123
 
 Employee
 
-Email
+Email : employee@test.com
 
-employee@test.com
+Password : Emp123
 
-Password
 
-Emp123
-Features
-Employee Features
+
+Features:
+
+Employee Features:
 
 User login
 
@@ -64,7 +60,9 @@ Rejected
 
 View leave balance
 
-Employer Features
+
+
+Employer Features:
 
 Login as employer
 
@@ -78,7 +76,8 @@ Delete leave requests
 
 Add new employees
 
-Tech Stack
+Tech Stack:
+
 Frontend
 
 Vue.js
