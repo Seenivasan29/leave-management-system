@@ -251,7 +251,7 @@ async fetchLeaves(){
 
 try{
 
-const res = await axios.get("http://localhost:5000/api/leave")
+const res = await axios.get("https://leave-management-system-backend-lh20.onrender.com/api/leave")
 this.leaves = res.data
 
 }catch(err){
@@ -267,7 +267,7 @@ async addEmployee(){
 try{
 
 await axios.post(
-"http://localhost:5000/api/auth/signup",
+"https://leave-management-system-backend-lh20.onrender.com/api/auth/signup",
 this.newEmployee
 )
 
@@ -290,14 +290,14 @@ alert("Error creating employee")
 
 async approveLeave(id){
 
-await axios.put(`http://localhost:5000/api/leave/approve/${id}`)
+await axios.put(`https://leave-management-system-backend-lh20.onrender.com/api/leave/approve/${id}`)
 this.fetchLeaves()
 
 },
 
 async rejectLeave(id){
 
-await axios.put(`http://localhost:5000/api/leave/reject/${id}`)
+await axios.put(`https://leave-management-system-backend-lh20.onrender.com/api/leave/reject/${id}`)
 this.fetchLeaves()
 
 },
@@ -306,7 +306,7 @@ async deleteLeave(id){
 
 try{
 
-await axios.delete(`http://localhost:5000/api/leave/${id}`)
+await axios.delete(`https://leave-management-system-backend-lh20.onrender.com/api/leave/${id}`)
 
 alert("Leave deleted successfully")
 

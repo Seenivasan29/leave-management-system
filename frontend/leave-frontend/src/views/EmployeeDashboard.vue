@@ -315,7 +315,7 @@ this.employeeId=localStorage.getItem("employeeId")
 this.userName=localStorage.getItem("userName")
 
 const res=await axios.get(
-`http://localhost:5000/api/leave/employee/${this.employeeId}`
+`https://leave-management-system-backend-lh20.onrender.com/api/leave/employee/${this.employeeId}`
 )
 
 this.leaves=res.data
@@ -356,11 +356,11 @@ return
 }
 
 if(this.leaveType==="Emergency Leave" && days>this.emergencyRemaining){
-alert(`Leave Limit Exceeded Cannot Apply `)
+alert(`Leave Limit Exceeded Cannot Apply`)
 return
 }
 
-await axios.post("http://localhost:5000/api/leave/apply",{
+await axios.post("https://leave-management-system-backend-lh20.onrender.com/api/leave/apply",{
 employeeId:this.employeeId,
 employeeName:this.userName,
 leaveType:this.leaveType,
